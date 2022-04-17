@@ -1,0 +1,148 @@
+* {
+  font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+.cont1 {
+  margin: 60px auto;
+}
+.cont1 div {
+  width: 200px;
+  height: 200px;
+  border: 5px solid black;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  display: inline-block;
+  margin-left: 30px;
+  position: relative;
+  counter-increment: numbers;
+  box-shadow: -6px -6px #e91e63, 6px 6px #2196f3;
+}
+
+.cont1 div::after {
+  content: "Element";
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  right: 0;
+  left: 0;
+  margin-top: -10px;
+  font-weight: bold;
+}
+
+.cont1 div::before {
+  content: counter(numbers);
+  position: absolute;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  right: 70px;
+  top: -30px;
+  background-color: black;
+  color: white;
+  text-align: center;
+  line-height: 1.6;
+  font-size: 30px;
+}
+
+/* two */
+.cont2 div {
+  width: 100px;
+  height: 100px;
+  margin: 60px auto;
+  background-color: #efefef;
+  border-top-right-radius: 50%;
+  border-bottom-left-radius: 50%;
+  border-top-left-radius: 10px 25px;
+  border-bottom-right-radius: 10px 25px;
+  box-shadow: 5px 5px 10px #7f7f7f inset, -5px -5px 10px #7f7f7f inset;
+}
+
+/* three */
+.cont3 {
+  width: 550px;
+  margin: 60px auto;
+}
+
+.cont3 div {
+  display: inline-block;
+  margin: 20px;
+  background-color: #eeeeee;
+  width: 230px;
+  height: 250px;
+  padding: 30px;
+}
+.cont3 div span {
+  background-color: #2196f3;
+  color: #fff;
+  font-size: 15px;
+  text-align: center;
+  margin: -10px;
+  border-radius: 7px;
+  -webkit-border-radius: 7px;
+  -moz-border-radius: 7px;
+  -ms-border-radius: 7px;
+  -o-border-radius: 7px;
+}
+
+.cont3 .basic span {
+  padding: 15px 70px;
+  font-size: 20px;
+}
+
+.cont3 div p {
+  background-color: #ddd;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  text-align: center;
+  line-height: 7;
+  margin-top: 35px;
+}
+.cont3 .pro span {
+  padding: 15px 80px;
+  font-size: 20px;
+}
+.cont3 .pro {
+  position: relative;
+}
+.cont3 .pro::before {
+  content: "";
+  background-color: #2196f3;
+  width: 2px;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: -25px;
+}
+.cont3 .pro::after {
+  content: "or";
+  background-color: #2196f3;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  color: #fff;
+  position: absolute;
+  top: 110px;
+  left: -39px;
+  line-height: 1.4;
+  text-align: center;
+}

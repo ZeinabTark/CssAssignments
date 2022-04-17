@@ -1,0 +1,184 @@
+div {
+  width: 200px;
+  height: 200px;
+  position: absolute;
+}
+
+.green {
+  background-color: darkcyan;
+  left: 30px;
+  top: 30px;
+  z-index: 3;
+}
+
+.red {
+  background-color: brown;
+  left: 50px;
+  top: 50px;
+  z-index: 4;
+}
+
+.blue {
+  background-color: darkturquoise;
+  left: 10px;
+  top: 10px;
+  z-index: 2;
+}
+
+.black {
+  background-color: black;
+  left: 10px;
+  top: 30px;
+  z-index: 1;
+}
+/*two*/
+.AA {
+  margin-top: 330px;
+}
+.two3 {
+  width: 400px;
+  background-color: #eee;
+  text-align: center;
+  font-weight: bold;
+  padding: 30px;
+  margin: 60px auto;
+  position: relative;
+  border: 5px solid;
+  border-color: #f44336 #2196f3;
+}
+
+.two3 span {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  background-color: #2196f3;
+  color: white;
+  text-align: center;
+}
+.top-left {
+  z-index: 4;
+  left: -15px;
+  top: -15px;
+  border-right: 5px solid #f44336;
+}
+.bottom-left {
+  z-index: 3;
+  bottom: -15px;
+  left: -15px;
+  border-right: 5px solid #f44336;
+}
+.top-right {
+  z-index: 2;
+  right: -15px;
+  top: -15px;
+  border-left: 5px solid #f44336;
+}
+
+.bottom-right {
+  z-index: 1;
+  bottom: -15px;
+  right: -15px;
+  border-left: 5px solid #f44336;
+}
+
+/*three*/
+.aa {
+  padding-left: 0px;
+  margin: 0 auto;
+  width: 500px;
+  list-style: none;
+}
+
+.aa1 {
+  background-color: #eee;
+  padding: 15px;
+  margin: 15px 5px;
+}
+
+.aa1 li {
+  background-color: #fff;
+  padding: 5px;
+  margin: 10px;
+}
+
+.aa2 {
+  background-color: #eee;
+  padding: 15px;
+  margin: 15px 5px;
+}
+
+.aa2 li {
+  background-color: #fff;
+  padding: 5px;
+  margin: 10px;
+}
+.aa2 ol {
+  list-style: upper-roman;
+}
+.aa3 {
+  background-color: #eee;
+  padding: 15px;
+  margin: 15px 5px;
+}
+
+.aa3 ul {
+  margin-left: -50px;
+}
+.aa3 li {
+  background-color: #fff;
+  list-style-position: inside;
+  padding: 10px;
+  margin: 10px;
+}
+
+/*four*/
+table {
+  width: 700px;
+  text-align: center;
+  padding: 10px 20px;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: "cairo", sans-serif;
+}
+
+table caption {
+  font-weight: bold;
+  font-size: 22px;
+  margin-bottom: 20px;
+}
+img {
+  width: 100px;
+  height: 100px;
+}
+thead {
+  background-color: black;
+  color: #fff;
+  height: 40px;
+  padding: 20px;
+}
+
+tbody {
+  background-color: #eee;
+  text-align: center;
+}
+table tbody td {
+  padding: 10px;
+}
+td button {
+  font-weight: bold;
+  margin: 2px;
+  padding: 5px 10px;
+  border: none;
+  color: #ffffff;
+  cursor: pointer;
+}
+table .one {
+  background-color: #03a9f4;
+}
+table .two {
+  background-color: #e91e63;
+}
+table tfoot tr td {
+  border-bottom: 3px solid #009688;
+  padding: 0;
+}

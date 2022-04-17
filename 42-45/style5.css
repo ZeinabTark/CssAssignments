@@ -1,0 +1,88 @@
+* {
+  box-sizing: border-box;
+  text-transform: capitalize;
+}
+.cont1 {
+  margin: 70px auto;
+  padding-top: 40px;
+  width: 600px;
+  height: 250px;
+  background-color: #f2f2f2;
+  font-size: 25px;
+  text-align: center;
+  transition: 0.5s 0s ease;
+  -moz-transition: 0.5s 0s ease;
+  -webkit-transition: 0.5s 0s ease;
+  -o-transition: 0.5s 0s ease;
+  -ms-transition: 0.5s 0s ease;
+}
+
+.cont1 .child {
+  width: 500px;
+  height: 85px;
+  padding-top: 30px;
+  background-color: #e2e2e2;
+  margin: 15px auto;
+  text-align: center;
+  transition-duration: 0.5s;
+  transition-delay: 0.5s;
+  transition-timing-function: ease;
+  transition-property: margin-top;
+}
+.cont1:hover {
+  margin-top: 20px;
+}
+
+.cont1:hover .child {
+  margin-top: 30px;
+}
+/* two */
+.div1 {
+  background-color: #eeeeee !important;
+  color: transparent !important;
+  border: none !important;
+  font-size: 20px !important;
+  width: 400px;
+  margin: 60px auto;
+  text-align: center;
+  position: relative;
+}
+.div1::after {
+  content: "Elzero";
+  font-weight: bold;
+  position: absolute;
+  color: black;
+  right: 30px;
+  text-align: center;
+  left: 0;
+}
+
+/* three */
+:root {
+  --mainColor: #009688;
+  --mainPadding: 10px;
+}
+
+.cont3 div {
+  margin: 30px auto;
+  width: 500px;
+  padding: var(--mainPadding, 10px);
+  border: 5px solid var(--mainColor, black);
+  color: var(--mainColor, red);
+  font-weight: bold;
+  font-size: 20px;
+}
+
+/* :root {
+  --mainColor1: #009688;
+  --mainPadding1: 10px;
+} */
+.cont4 div {
+  margin: 30px auto;
+  width: 500px;
+  padding: var(--mainPadding1, 10px);
+  border: 5px solid var(--mainColor1, black);
+  color: var(--mainColor1, red);
+  font-weight: bold;
+  font-size: 20px;
+}

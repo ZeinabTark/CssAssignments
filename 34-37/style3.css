@@ -1,0 +1,97 @@
+/* one */
+.container1 {
+  margin: 60px auto;
+}
+
+.container1 div {
+  width: 300px;
+  height: 60px;
+  background-color: #eee;
+  color: #000;
+  padding: 10px;
+  margin: 15px auto;
+  text-align: center;
+  line-height: 3;
+  font-weight: bold;
+}
+
+.container1 div:empty {
+  background-color: red;
+}
+
+/* two */
+.cont2 {
+  width: 350px;
+  height: 80px;
+  background-color: #eee;
+  text-align: center;
+  line-height: 4;
+  margin: 60px auto;
+}
+.cont2::first-letter {
+  color: #fff;
+  background-color: red;
+  margin-left: -35px;
+  font-size: 20px;
+  padding: 15px 15px;
+}
+/* three */
+.cont3 p {
+  width: 450px;
+  height: 80px;
+  margin: 30px auto;
+  line-height: 4;
+  text-align: center;
+  background-color: #eee;
+  position: relative;
+  border-left: 5px solid #e91e63;
+}
+
+.cont3 p::after {
+  content: "";
+  width: 0;
+  height: 0;
+  position: absolute;
+  left: -35px;
+  top: 30%;
+  border: 15px solid;
+  border-color: transparent #e91e63 transparent transparent;
+}
+.cont3 p::before {
+  content: attr(data-person);
+  position: absolute;
+  width: 80px;
+  height: 50px;
+  text-align: center;
+  line-height: 2.5;
+  background-color: #dddddd;
+  left: -120px;
+  top: 50%;
+  margin-top: -22px;
+}
+
+/* four */
+.cont4 p {
+  width: 450px;
+  height: 80px;
+  margin: 30px auto;
+  line-height: 4;
+  text-align: center;
+  background-color: #eee;
+  position: relative;
+  border-right: 5px solid #f44336;
+  counter-increment: numbers;
+}
+.cont4 p::before {
+  content: counter(numbers);
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  color: #fff;
+  background-color: #f44336;
+  text-align: center;
+  line-height: 3;
+  left: -20px;
+  font-weight: bold;
+  font-size: 25px;
+}

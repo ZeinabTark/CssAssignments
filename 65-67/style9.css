@@ -1,0 +1,163 @@
+* {
+  box-sizing: border-box;
+}
+/* one */
+.cont1 div {
+  width: 300px;
+  height: 200px;
+  background-color: #eee;
+  margin: 60px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  font-weight: bold;
+  position: relative;
+  color: #03a9f4;
+}
+.cont1 div::before {
+  content: "";
+  position: absolute;
+  width: 310px;
+  height: 210px;
+  background-color: #e91e63;
+  transform: rotate(5deg);
+  -webkit-transform: rotate(5deg);
+  -moz-transform: rotate(5deg);
+  -ms-transform: rotate(5deg);
+  -o-transform: rotate(5deg);
+  z-index: -2;
+}
+
+.cont1 div::after {
+  content: "";
+  position: absolute;
+  width: 310px;
+  height: 210px;
+  background-color: #03a9f4;
+  transform: rotate(-5deg);
+  -webkit-transform: rotate(-5deg);
+  -moz-transform: rotate(-5deg);
+  -ms-transform: rotate(-5deg);
+  -o-transform: rotate(-5deg);
+  z-index: -1;
+}
+
+/* two */
+
+.cont2 div {
+  width: 200px;
+  height: 200px;
+  background-color: #eee;
+  margin: 60px auto;
+  border-radius: 50%;
+  font-size: 30px;
+  position: relative;
+  text-align: center;
+  line-height: 6.5;
+  font-weight: bold;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+.cont2 div::before {
+  content: "";
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  border: 10px solid #e91e63;
+  border-left-color: #fff;
+  left: -10px;
+  top: -10px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+.cont2 div::after {
+  content: "";
+  position: absolute;
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+  border: 10px solid #03a9f4;
+  border-right-color: #fff;
+  left: -20px;
+  top: -20px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+/* three */
+.cont2 div {
+  width: 200px;
+  height: 200px;
+  background-color: #eee;
+  margin: 60px auto;
+  border-radius: 50%;
+  font-size: 30px;
+  position: relative;
+  text-align: center;
+  line-height: 6.5;
+  font-weight: bold;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+.cont2 div::before {
+  content: "";
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  border: 10px solid #e91e63;
+  border-left-color: #fff;
+  left: -10px;
+  top: -10px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  transition: 0.5s 0.5s ease;
+  -webkit-transition: 0.5s 0.5s ease;
+  -moz-transition: 0.5s 0.5s ease;
+  -ms-transition: 0.5s 0.5s ease;
+  -o-transition: 0.5s 0.5s ease;
+}
+
+.cont2 div::after {
+  content: "";
+  position: absolute;
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+  border: 10px solid #03a9f4;
+  border-right-color: #fff;
+  left: -20px;
+  top: -20px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  transition: 0.5s 1s ease;
+  -webkit-transition: 0.5s 1s ease;
+  -moz-transition: 0.5s 1s ease;
+  -ms-transition: 0.5s 1s ease;
+  -o-transition: 0.5s 1s ease;
+}
+
+.cont2 div:hover::before,
+.cont2 div:hover::after {
+  transform: rotate(360deg);
+  -webkit-transform: rotate(360deg);
+  -moz-transform: rotate(360deg);
+  -ms-transform: rotate(360deg);
+  -o-transform: rotate(360deg);
+}
